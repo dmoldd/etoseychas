@@ -198,13 +198,17 @@ img {
 }
 
 .wrapper {
-  background-color: #279fd7;
+  background-color: #236f93;
   box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 1600px;
   margin: 0 auto;
+  background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
+  background-repeat: no-repeat;
+  background-size: 420px auto, 220px auto;
+  background-position: 200px 100px, 975px 10px;
 }
 
 body,
@@ -279,6 +283,7 @@ a {
 .nav-list__item a {
   padding: 0 0 30px 0;
   border-bottom: 5px transparent solid;
+  transition: all 0.2s ease-in-out;
 }
 .nav-list__item:hover a {
   border-bottom: 5px white solid;
@@ -287,5 +292,12 @@ a {
   display: flex;
   list-style-type: none;
   column-gap: 30px;
+}
+.nav-list__networks-list-item {
+  transition: all 0.2s ease-in-out;
+}
+.nav-list__networks-list-item:hover {
+  transform: rotate(-5deg);
+  transition: all 0.2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@
     background-image: url("../img/logo-hover.png");
     transition: $transition-fast;
   }
-
+  
   &__items {
     margin: 0 0 0 auto;
     height: fit-content;
@@ -40,25 +40,27 @@
   &__item a {
     padding: 0 0 30px 0;
     border-bottom: 5px transparent solid;
-
+    transition: $transition-fast;
   }
-
+  
   &__item:hover a {
     border-bottom: 5px white solid;
   }
-
+  
   &__networks-list {
     display: flex;
     list-style-type: none;
     column-gap: 30px;
   }
-
+  
   &__networks-list-item {
-
+    transition: $transition-fast;
+    
   }
-
+  
   &__networks-list-item:hover {
-
+    transform: rotate(-5deg);
+    transition: $transition-fast;
   }
-
+  
 }
