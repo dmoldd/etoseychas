@@ -8,4 +8,37 @@
   background-image: url("../img/svg/hero-cloud.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  transition: $transition-slow;
+  
+  &:hover {
+    transform: scale(1.03);
+    transition: $transition-slow;
+  }
+}
+
+.hero__inner {
+}
+
+.hero__inner-title {
+  font-size: 32px;
+  text-align: center;
+  padding: 185px 0 0 131px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+}
+
+.hero__inner-title span {
+  font-size: 87px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  background: url("./../../img/bg-gradient.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  transform: scale(1, 1.5);
+  display: block;
 }

@@ -170,6 +170,14 @@ button:focus {
     background-position: 0 0;
   }
 }
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -204,7 +212,7 @@ img {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
+  width: 1600px;
   margin: 0 auto;
   background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
   background-repeat: no-repeat;
@@ -314,5 +322,34 @@ a {
   background-image: url("../img/svg/hero-cloud.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  transition: all 0.5s ease-in-out;
+}
+.hero__inner:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease-in-out;
+}
+
+.hero__inner-title {
+  font-size: 32px;
+  text-align: center;
+  padding: 185px 0 0 131px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+}
+
+.hero__inner-title span {
+  font-size: 87px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  background: url("./../../img/bg-gradient.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  transform: scale(1, 1.5);
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
