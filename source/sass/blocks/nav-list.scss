@@ -4,6 +4,12 @@
   display: flex;
   height: 209px;
   align-items: center;
+  padding: 0 0 30px 0;
+  margin: 30px 0 0 0;
+  background: $header-gradient, url("../img/scissors.png");
+  background-position: bottom 1px center, bottom 1px left 1px;
+  background-repeat: no-repeat;
+  background-size: 100% 4px, 50px 30px;
   
   &__logo {
     margin: 20px 0 0 0;
