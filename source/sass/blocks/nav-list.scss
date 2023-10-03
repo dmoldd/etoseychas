@@ -6,19 +6,19 @@
   align-items: center;
   padding: 0 0 30px 0;
   margin: 30px 0 0 0;
-  background: $header-gradient, url("../img/scissors.png");
-  background-position: bottom 1px center, bottom 1px left 1px;
-  background-repeat: no-repeat;
-  background-size: 100% 4px, 50px 30px;
+  // background: $header-gradient, url("../img/scissors.png");
+  // background-position: bottom 1px center, bottom 1px left 1px;
+  // background-repeat: no-repeat;
+  // background-size: 100% 4px, 50px 30px;
   
   &__logo {
-    margin: 20px 0 0 0;
+    margin: -9px 0 0 0;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     display: block;
-    width: 350px;
-    height: 189px;
+    width: 335px;
+    height: 200px;
     background-image: url("../img/logo.png");
     background-size: 100% 100%;
     transition: $transition-fast;
@@ -59,14 +59,28 @@
     column-gap: 30px;
   }
   
+  
   &__networks-list-item {
-    transition: $transition-fast;
+    transition: all 0.5s ease-in-out;
     
   }
   
+
+  &__networks-list-item svg g path {
+    fill: white;
+    transition: all 2s ease;
+  }
+
   &__networks-list-item:hover {
-    transform: rotate(-5deg);
-    transition: $transition-fast;
+    transform: scale(125%);
+    transition: all 1s ease;
+    
+    
+  }
+  
+  &__networks-list-item:hover svg g path {
+    fill: black;
+    transition: all 1s ease;
   }
   
 }

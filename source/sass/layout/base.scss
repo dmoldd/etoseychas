@@ -3,17 +3,29 @@
 }
 
 .page__body {
-  font-family: "Montserrat", sans-serif;
+  // font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  background-color: #000000;
+  background-image: url("../img/shrift.png");
+  @font-face {
+    font-family: "Sitka Small";
+    font-weight: 800;
+    src: url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.eot");
+    src: url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4cac62b9f31046456d6fa8a29b0d9462.svg#Sitka Small")format("svg");
+  }
 }
 
 .container {
   height: 100%;
   max-width: 1600px;
   padding: 0 20px;
-
+  
   @include desktops {
     width: 100%;
   }
@@ -26,17 +38,20 @@ img {
 }
 
 .wrapper {
-  background-color: $body-bg;
+  // background-color: $body-bg;
   box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   width: 1600px;
   margin: 0 auto;
-  background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
+  // background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
+  // background-size: 420px auto, 220px auto;
+  // background-position: 200px 100px, 975px 10px;
+  background-image: url("../img/main-bg.png");
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: 420px auto, 220px auto;
-  background-position: 200px 100px, 975px 10px;
+  background-position: center center;
 }
 
 body,
