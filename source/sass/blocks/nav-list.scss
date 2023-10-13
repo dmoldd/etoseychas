@@ -2,85 +2,109 @@
   transition: $transition-fast;
   position: relative;
   display: flex;
-  height: 209px;
+  height: inherit;
   align-items: center;
-  padding: 0 0 30px 0;
-  margin: 30px 0 0 0;
-  // background: $header-gradient, url("../img/scissors.png");
-  // background-position: bottom 1px center, bottom 1px left 1px;
-  // background-repeat: no-repeat;
-  // background-size: 100% 4px, 50px 30px;
-  
+  padding: 0;
+  margin: 0;
+
+  // &--opened {
+  //   height: 170px;
+  // }
+
   &__logo {
-    margin: -9px 0 0 0;
+    margin: 0;
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     display: block;
-    width: 335px;
-    height: 200px;
+    width: 301px;
+    height: 169px;
+    top: 0;
     background-image: url("../img/logo.png");
     background-size: 100% 100%;
     transition: $transition-fast;
   }
 
-  &__logo:hover {
-    background-image: url("../img/logo-hover.png");
-    transition: $transition-fast;
-  }
-  
-  &__items {
-    margin: 0 40px 0 auto;
-    height: fit-content;
-    list-style-type: none;
-    text-transform: uppercase;
-    display: flex;
-    column-gap: 50px;
-    width: fit-content;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 3px;
-    font-size: 20px;
-  }
-  
-  &__item a {
-    padding: 0 0 30px 0;
-    border-bottom: 5px transparent solid;
-    transition: $transition-fast;
-  }
-  
-  &__item:hover a {
-    border-bottom: 5px white solid;
-  }
-  
   &__networks-list {
     display: flex;
     list-style-type: none;
-    column-gap: 30px;
+    column-gap: 15px;
+    margin: 0 50px 0 auto;
+    padding: 8px 0 0 0;
   }
-  
-  
+
   &__networks-list-item {
     transition: all 0.5s ease-in-out;
-    
   }
-  
 
   &__networks-list-item svg g path {
-    fill: white;
+    fill: #ffffff;
     transition: all 2s ease;
   }
 
   &__networks-list-item:hover {
     transform: scale(125%);
     transition: all 1s ease;
-    
-    
   }
-  
+
   &__networks-list-item:hover svg g path {
-    fill: black;
     transition: all 1s ease;
   }
-  
+
+  &__burger {
+    // margin: 0 0 0 auto;
+    height: inherit;
+    background-color: inherit;
+    // background-color: red;
+    border: none;
+    padding: 0;
+    display: flex;
+  }
+
+  &__burger-text {
+    margin: 0 10px 0 0;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  &__burger-icon {
+    margin: 0;
+    height: inherit;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__burger-element1,
+  &__burger-element2,
+  &__burger-element3 {
+    width: 100%;
+    height: 10px;
+    background-color: #000000;
+    display: block;
+    border-radius: 5px;
+  }
+
+  &__link-list {
+    list-style-type: none;
+    display: flex;
+    font-size: 24px;
+    letter-spacing: 3px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__link-list-item--slash {
+    margin: 0 10px;
+  }
+
+  &__link {
+
+  }
 }
