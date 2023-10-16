@@ -155,6 +155,20 @@ button:focus {
   outline: none;
 }
 
+@font-face {
+  font-family: "MinionPro";
+  src: local("PT Sans"), url("../font/MinionPro-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MinionPro";
+  src: local("PT Sans"), url("../font/MinionPro-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 /* colors */
 /* gradients */
 /* vars */
@@ -183,10 +197,11 @@ button:focus {
 }
 
 .page__body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "MinionPro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  background-color: #4e4e4e;
 }
 
 .container {
@@ -207,17 +222,13 @@ img {
 }
 
 .wrapper {
-  background-color: #236f93;
   box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   width: 1600px;
   margin: 0 auto;
-  background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
-  background-repeat: no-repeat;
-  background-size: 420px auto, 220px auto;
-  background-position: 200px 100px, 975px 10px;
+  background-color: #000000;
 }
 
 body,
@@ -251,71 +262,97 @@ a {
   overflow: hidden;
 }
 
+.header {
+  height: 85px;
+  background-color: white;
+}
+
 .nav-list {
   transition: all 0.2s ease-in-out;
   position: relative;
   display: flex;
-  height: 209px;
+  height: inherit;
   align-items: center;
-  padding: 0 0 30px 0;
-  margin: 30px 0 0 0;
-  background: linear-gradient(90deg, rgb(107, 218, 235) 2.5%, rgba(0, 0, 0, 0) 2.5%, rgba(0, 0, 0, 0) 5%, rgb(107, 218, 235) 5%, rgb(107, 218, 235) 7.5%, rgba(0, 0, 0, 0) 7.5%, rgba(0, 0, 0, 0) 10%, rgb(107, 218, 235) 10%, rgb(107, 218, 235) 12.5%, rgba(0, 0, 0, 0) 12.5%, rgba(0, 0, 0, 0) 15%, rgb(107, 218, 235) 15%, rgb(107, 218, 235) 17.5%, rgba(0, 0, 0, 0) 17.5%, rgba(0, 0, 0, 0) 20%, rgb(107, 218, 235) 20%, rgb(107, 218, 235) 22.5%, rgba(0, 0, 0, 0) 22.5%, rgba(0, 0, 0, 0) 25%, rgb(107, 218, 235) 25%, rgb(107, 218, 235) 27.5%, rgba(0, 0, 0, 0) 27.5%, rgba(0, 0, 0, 0) 30%, rgb(107, 218, 235) 30%, rgb(107, 218, 235) 32.5%, rgba(0, 0, 0, 0) 32.5%, rgba(0, 0, 0, 0) 35%, rgb(107, 218, 235) 35%, rgb(107, 218, 235) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 40%, rgb(107, 218, 235) 40%, rgb(107, 218, 235) 42.5%, rgba(0, 0, 0, 0) 42.5%, rgba(0, 0, 0, 0) 45%, rgb(107, 218, 235) 45%, rgb(107, 218, 235) 47.5%, rgba(0, 0, 0, 0) 47.5%, rgba(0, 0, 0, 0) 50%, rgb(107, 218, 235) 50%, rgb(107, 218, 235) 52.5%, rgba(0, 0, 0, 0) 52.5%, rgba(0, 0, 0, 0) 55%, rgb(107, 218, 235) 55%, rgb(107, 218, 235) 57.5%, rgba(0, 0, 0, 0) 57.5%, rgba(0, 0, 0, 0) 60%, rgb(107, 218, 235) 60%, rgb(107, 218, 235) 62.5%, rgba(0, 0, 0, 0) 62.5%, rgba(0, 0, 0, 0) 65%, rgb(107, 218, 235) 65%, rgb(107, 218, 235) 67.5%, rgba(0, 0, 0, 0) 67.5%, rgba(0, 0, 0, 0) 70%, rgb(107, 218, 235) 70%, rgb(107, 218, 235) 72.5%, rgba(0, 0, 0, 0) 72.5%, rgba(0, 0, 0, 0) 75%, rgb(107, 218, 235) 75%, rgb(107, 218, 235) 77.5%, rgba(0, 0, 0, 0) 77.5%, rgba(0, 0, 0, 0) 80%, rgb(107, 218, 235) 80%, rgb(107, 218, 235) 82.5%, rgba(0, 0, 0, 0) 82.5%, rgba(0, 0, 0, 0) 85%, rgb(107, 218, 235) 85%, rgb(107, 218, 235) 87.5%, rgba(0, 0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 90%, rgb(107, 218, 235) 90%, rgb(107, 218, 235) 92.5%, rgba(0, 0, 0, 0) 92.5%, rgba(0, 0, 0, 0) 95%, rgb(107, 218, 235) 95%, rgb(107, 218, 235) 97.5%, rgba(0, 0, 0, 0) 97.5%, rgba(0, 0, 0, 0) 100%, rgb(107, 218, 235) 100%), url("../img/scissors.png");
-  background-position: bottom 1px center, bottom 1px left 1px;
-  background-repeat: no-repeat;
-  background-size: 100% 4px, 50px 30px;
+  padding: 0;
+  margin: 0;
 }
 .nav-list__logo {
-  margin: 20px 0 0 0;
+  margin: 0;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   display: block;
-  width: 350px;
-  height: 189px;
+  width: 301px;
+  height: 169px;
+  top: 0;
   background-image: url("../img/logo.png");
   background-size: 100% 100%;
   transition: all 0.2s ease-in-out;
 }
-.nav-list__logo:hover {
-  background-image: url("../img/logo-hover.png");
-  transition: all 0.2s ease-in-out;
-}
-.nav-list__items {
-  margin: 0 40px 0 auto;
-  height: -moz-fit-content;
-  height: fit-content;
-  list-style-type: none;
-  text-transform: uppercase;
-  display: flex;
-  column-gap: 50px;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  color: white;
-  letter-spacing: 3px;
-  font-size: 20px;
-}
-.nav-list__item a {
-  padding: 0 0 30px 0;
-  border-bottom: 5px transparent solid;
-  transition: all 0.2s ease-in-out;
-}
-.nav-list__item:hover a {
-  border-bottom: 5px white solid;
-}
 .nav-list__networks-list {
   display: flex;
   list-style-type: none;
-  column-gap: 30px;
+  column-gap: 15px;
+  margin: 0 50px 0 auto;
+  padding: 8px 0 0 0;
 }
 .nav-list__networks-list-item {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.nav-list__networks-list-item svg g path {
+  fill: #ffffff;
+  transition: all 2s ease;
 }
 .nav-list__networks-list-item:hover {
-  transform: rotate(-5deg);
-  transition: all 0.2s ease-in-out;
+  transform: scale(125%);
+  transition: all 1s ease;
 }
-
+.nav-list__networks-list-item:hover svg g path {
+  transition: all 1s ease;
+}
+.nav-list__burger {
+  height: inherit;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  display: flex;
+}
+.nav-list__burger-text {
+  margin: 0 10px 0 0;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.nav-list__burger-icon {
+  margin: 0;
+  height: inherit;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.nav-list__burger-element1, .nav-list__burger-element2, .nav-list__burger-element3 {
+  width: 100%;
+  height: 10px;
+  background-color: #000000;
+  display: block;
+  border-radius: 5px;
+}
+.nav-list__link-list {
+  list-style-type: none;
+  display: flex;
+  font-size: 24px;
+  letter-spacing: 3px;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-list__link-list-item--slash {
+  margin: 0 10px;
+}
 .hero__inner {
   min-height: 600px;
   margin: 80px 5% 0 5%;
