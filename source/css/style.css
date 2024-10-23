@@ -201,7 +201,7 @@ button:focus {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  background-color: #4e4e4e;
+  background-color: #C9D0CE;
 }
 
 .container {
@@ -228,7 +228,7 @@ img {
   flex-direction: column;
   width: 1600px;
   margin: 0 auto;
-  background-color: #000000;
+  background-color: #99A09E;
 }
 
 body,
@@ -264,7 +264,108 @@ a {
 
 .header {
   height: 85px;
-  background-color: white;
+  background-color: #3D4140;
+  border-radius: 15px;
+  margin: 30px 30px 0 30px;
+  font-family: "Jost", sans-serif;
+  color: #C9D0CE;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu {
+  font-size: 25px;
+  list-style-type: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 200px 0 50px;
+  align-items: center;
+}
+
+.header__menu-item {
+  background-image: url("../img/light-btn-off.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: top 15px left 0;
+  border-bottom: 3px transparent solid;
+  padding: 15px 0 15px 35px;
+  position: relative;
+}
+.header__menu-item:nth-child(2) {
+  background-image: url("../img/light-long-btn-off.png");
+}
+.header__menu-item:nth-child(2):hover {
+  background-image: url("../img/light-long-btn-on.png");
+}
+.header__menu-item:nth-child(3) {
+  background-image: url("../img/arrow-btn-off.png");
+  background-position: top 12px left 0;
+}
+.header__menu-item:nth-child(3):hover {
+  background-image: url("../img/arrow-btn-on.png");
+}
+.header__menu-item:nth-child(4) {
+  background-image: url("../img/battery-btn-off.png");
+}
+.header__menu-item:nth-child(4):hover {
+  background-image: url("../img/battery-btn-on.png");
+}
+.header__menu-item:nth-child(5) {
+  background-image: url("../img/oil-btn-off.png");
+}
+.header__menu-item:nth-child(5):hover {
+  background-image: url("../img/oil-btn-on.png");
+}
+.header__menu-item:hover {
+  background-image: url("../img/light-btn-on.png");
+  border-bottom: 3px #53C43B solid;
+  color: #53C43B;
+}
+.header__menu-item .header__menu-item--inner {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  color: #C9D0CE;
+  background-color: #3D4140;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  left: 0;
+  top: 40px;
+  padding: 20px;
+}
+.header__menu-item .header__menu-item--inner .header__menu-item .header__menu-item--inner--inner:hover {
+  background-color: #3D4140;
+  background-image: none;
+}
+.header__menu-item .header__menu-item--inner li {
+  background-image: url("../img/gas-btn-off.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: top -5px left 0;
+  padding: 0 0 0 35px;
+  width: max-content;
+  margin: 0 20px;
+}
+.header__menu-item .header__menu-item--inner li:hover {
+  background-image: url("../img/gas-btn-on.png");
+  width: max-content;
+  margin: 0 20px;
+}
+.header__menu-item:hover .header__menu-item--inner {
+  display: flex;
+  background-image: none;
+  color: #C9D0CE;
+}
+
+.header__title {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 0;
 }
 
 .nav-list {
