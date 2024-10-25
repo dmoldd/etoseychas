@@ -283,17 +283,18 @@ a {
   flex-grow: 1;
   justify-content: space-between;
   padding: 0 200px 0 50px;
-  align-items: center;
+  margin: 0;
 }
 
 .header__menu-item {
   background-image: url("../img/light-btn-off.png");
   background-repeat: no-repeat;
   background-size: 30px;
-  background-position: top 15px left 0;
+  background-position: top 28px left 0;
   border-bottom: 3px transparent solid;
-  padding: 15px 0 15px 35px;
+  padding: 0 0 0 35px;
   position: relative;
+  flex-grow: 1;
 }
 .header__menu-item:nth-child(2) {
   background-image: url("../img/light-long-btn-off.png");
@@ -303,7 +304,6 @@ a {
 }
 .header__menu-item:nth-child(3) {
   background-image: url("../img/arrow-btn-off.png");
-  background-position: top 12px left 0;
 }
 .header__menu-item:nth-child(3):hover {
   background-image: url("../img/arrow-btn-on.png");
@@ -322,8 +322,6 @@ a {
 }
 .header__menu-item:hover {
   background-image: url("../img/light-btn-on.png");
-  border-bottom: 3px #53C43B solid;
-  color: #53C43B;
 }
 .header__menu-item .header__menu-item--inner {
   display: none;
@@ -334,7 +332,7 @@ a {
   border-radius: 15px;
   border: 3px solid transparent;
   left: 0;
-  top: 40px;
+  top: 80px;
   padding: 20px;
 }
 .header__menu-item .header__menu-item--inner .header__menu-item .header__menu-item--inner--inner:hover {
@@ -359,6 +357,13 @@ a {
   display: flex;
   background-image: none;
   color: #C9D0CE;
+}
+.header__menu-item-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
 .header__title {
