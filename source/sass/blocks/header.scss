@@ -16,9 +16,9 @@
   font-size: 25px;
   list-style-type: none;
   display: flex;
-  flex-grow: 1;
+  // flex-grow: 1;
   justify-content: space-between;
-  padding: 0 200px 0 50px;
+  padding: 0 0 0 50px;
   margin: 0;
 }
 
@@ -28,7 +28,8 @@
   background-size: 30px;
   background-position: top 28px left 0;
   border-bottom: 3px transparent solid;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 37px;
+  margin: 0 0 0 30px;
   position: relative;
   flex-grow: 1;
 
@@ -115,6 +116,10 @@
     text-align: center;
     align-items: center;
   }
+
+  &--focused {
+    color: green;
+  }
 }
 
 .header__title {
@@ -122,4 +127,28 @@
   display: flex;
   align-items: center;
   padding: 0 50px 0 0;
+
+  a {
+    line-height: 0.9;
+    display: block;
+    max-width: min-content;
+  }
+}
+
+.header__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 0;
+
+  input {
+    border-radius: 60px;
+    height: 40px;
+    text-indent: 20px;
+  }
+
+  &:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+  }
 }

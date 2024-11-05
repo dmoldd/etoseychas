@@ -19,7 +19,7 @@
         <header class="header">
           <div class="container">
             <ul class="header__menu">
-              <li class="header__menu-item">
+              <li class="header__menu-item header__menu-item--focused">
                 <a class="header__menu-item-title">История</a>
                 <ul class="header__menu-item header__menu-item--inner">
                   <li>История создания</li>
@@ -47,7 +47,10 @@
                 <a class="header__menu-item-title">Поддержать</a>
               </li>
             </ul>
-            <h1 class="header__title">Азбука Окавода</h1>
+            <form action="" class="header__search" id="searchbox" action="/" method="post" role="search">
+              <input type="text" value="" name="searchword" placeholder="искать..." autocomplete="off"><ul class="results" style="display: none;"></ul>
+            </form>
+            <h1 class="header__title"><a href="#">Азбука Окавода</a></h1>
           </div>
         </header>
         <main class="main">

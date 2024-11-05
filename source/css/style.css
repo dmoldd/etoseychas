@@ -280,9 +280,8 @@ a {
   font-size: 25px;
   list-style-type: none;
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
-  padding: 0 200px 0 50px;
+  padding: 0 0 0 50px;
   margin: 0;
 }
 
@@ -292,7 +291,8 @@ a {
   background-size: 30px;
   background-position: top 28px left 0;
   border-bottom: 3px transparent solid;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 37px;
+  margin: 0 0 0 30px;
   position: relative;
   flex-grow: 1;
 }
@@ -365,12 +365,36 @@ a {
   text-align: center;
   align-items: center;
 }
+.header__menu-item--focused {
+  color: green;
+}
 
 .header__title {
   text-transform: uppercase;
   display: flex;
   align-items: center;
   padding: 0 50px 0 0;
+}
+.header__title a {
+  line-height: 0.9;
+  display: block;
+  max-width: min-content;
+}
+
+.header__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 0;
+}
+.header__search input {
+  border-radius: 60px;
+  height: 40px;
+  text-indent: 20px;
+}
+.header__search:active, .header__search :hover, .header__search :focus {
+  outline: 0;
+  outline-offset: 0;
 }
 
 .nav-list {
