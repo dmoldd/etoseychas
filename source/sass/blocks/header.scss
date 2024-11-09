@@ -53,11 +53,30 @@
   @media (max-width: 840px) {
     font-size: 25px;
   }
-  
+
   @media (max-width: 740px) {
     flex-direction: column;
     align-items: center;
     font-size: 50px;
+  }
+
+  &--nojs {
+
+  }
+
+  &--opened &-burger {
+    background-image: url("../img/header/menu-opened.png");
+  }
+
+  &--closed &-burger {
+    background-image: url("../img/header/menu-closed.png");
+  }
+
+  &-burger {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
   }
 }
 

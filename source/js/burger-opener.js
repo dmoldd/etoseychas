@@ -1,14 +1,22 @@
-let navMain = document.querySelector('.nav-list');
-let navToggle = document.querySelector('.nav-list__burger');
+let navMain = document.querySelector('.header__menu');
+let navToggle = document.querySelector('.header__menu-burger');
 
-navMain.classList.remove('nav-list--nojs');
+navMain.classList.remove('header__menu--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('nav-list--closed')) {
-    navMain.classList.remove('nav-list--closed');
-    navMain.classList.add('nav-list--opened');
+let showOrHideMenu = () => {  
+  console.log('s');
+
+  if (navMain.classList.contains('header__menu--closed')) {
+    navMain.classList.remove('header__menu--closed');
+    navMain.classList.add('header__menu--opened');
   } else {
-    navMain.classList.add('nav-list--closed');
-    navMain.classList.remove('nav-list--opened');
+    navMain.classList.add('header__menu--closed');
+    navMain.classList.remove('header__menu--opened');
   }
-});
+}
+
+let foo = () => {
+  navToggle.addEventListener('click', showOrHideMenu);
+}
+
+export {foo}

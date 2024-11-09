@@ -18,7 +18,7 @@
       <div class="wrapper">
         <header class="header">
           <div class="container">
-            <ul class="header__menu">
+            <ul class="header__menu header__menu--opened">
               <li class="header__menu-item header__menu-item--focused header__menu-item--history">
                 <a class="header__menu-item-title">История</a>
                 <ul class="header__menu-item header__menu-item--inner-vert">
@@ -56,6 +56,7 @@
               <li class="header__menu-item header__menu-item--donate">
                 <a class="header__menu-item-title">Поддержать</a>
               </li>
+              <button class="header__menu-burger"></button>
             </ul>
             <form action="" class="header__search" id="searchbox" action="/" method="post" role="search">
               <input type="text" value="" name="searchword" placeholder="искать..." autocomplete="off"><ul class="results" style="display: none;"></ul>
@@ -96,5 +97,6 @@
           </div>
         </footer>
       </div>
+      <script src="./js/main.js" type="module"></script>
   </body>
 </html>     

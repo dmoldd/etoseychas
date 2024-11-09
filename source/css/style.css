@@ -340,6 +340,18 @@ a {
     font-size: 50px;
   }
 }
+.header__menu--opened .header__menu-burger {
+  background-image: url("../img/header/menu-opened.png");
+}
+.header__menu--closed .header__menu-burger {
+  background-image: url("../img/header/menu-closed.png");
+}
+.header__menu-burger {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
 
 .header__menu-item {
   padding: 0 0 0 37px;
