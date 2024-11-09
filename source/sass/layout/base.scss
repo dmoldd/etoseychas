@@ -28,7 +28,6 @@ img {
 }
 
 .wrapper {
-  // background-color: $body-bg;
   height: 100%;
   box-shadow: 10px 0 19px -17px #000000, -10px 0 19px -17px #000000;
   min-height: 100%;
@@ -37,13 +36,10 @@ img {
   width: 1600px;
   margin: 0 auto;
   background-color: #99A09E;
-  // background-image: url(../img/svg/oblako.png), url(../img/svg/oblako1.png);
-  // background-size: 420px auto, 220px auto;
-  // background-position: 200px 100px, 975px 10px;
-  // background-image: url("../img/main-bg.png");
-  // background-size: 100% auto;
-  // background-repeat: no-repeat;
-  // background-position: center center;
+
+  @media (max-width: 1599px) {
+    width: 100vw;
+  }
 }
 
 body,
