@@ -16,9 +16,9 @@
   </head>
   <body class="page__body">
       <div class="wrapper">
-        <header class="header">
+        <header class="header header--nojs header--opened">
           <div class="container">
-            <ul class="header__menu header__menu--opened">
+            <ul class="header__menu">
               <li class="header__menu-item header__menu-item--focused header__menu-item--history">
                 <a class="header__menu-item-title">История</a>
                 <ul class="header__menu-item header__menu-item--inner-vert">
@@ -56,12 +56,12 @@
               <li class="header__menu-item header__menu-item--donate">
                 <a class="header__menu-item-title">Поддержать</a>
               </li>
-              <button class="header__menu-burger"></button>
             </ul>
             <form action="" class="header__search" id="searchbox" action="/" method="post" role="search">
               <input type="text" value="" name="searchword" placeholder="искать..." autocomplete="off"><ul class="results" style="display: none;"></ul>
             </form>
             <h1 class="header__title"><a href="#">Азбука Окавода</a></h1>
+            <button class="header__burger"></button>
           </div>
         </header>
         <main class="main">
