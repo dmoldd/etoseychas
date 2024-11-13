@@ -309,8 +309,25 @@
     width: auto;
     position: static;
     clip-path: none;
-
+    
     margin: 0 auto;
+  }
+  
+  @media (max-width: 550px) {
+    font-size: 30px;
+    margin: 0 0 0 20px;
+  }
+  
+  @media (max-width: 440px) {
+    font-size: 28px;
+  }
+  
+  @media (max-width: 400px) {
+    font-size: 25px;
+  }
+  
+  @media (max-width: 350px) {
+    font-size: 23px;
   }
 }
 
