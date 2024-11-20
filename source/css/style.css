@@ -597,6 +597,21 @@ a {
   flex: 1 0 auto;
 }
 
+.parameters .container {
+  padding: 0 200px;
+}
+
+.parameters__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 70px 0 0 0;
+}
+
+.parameters__desc {
+  text-align: center;
+  font-size: 22px;
+}
+
 .footer {
   background-color: #3D4140;
   flex: 0 0 auto;
