@@ -27,6 +27,9 @@ const sortObj = (obj, list) => {
 const createList = (titleName, obj) => {
   let list = document.createElement('ul');
   list.classList.add('parameters__item');
+  if (titleName === 'Главное') {
+    list.classList.add('parameters__item--main');
+  }
   let listTitle = document.createElement('h3');
   listTitle.classList.add('parameters__item-title');
   listTitle.innerHTML = titleName;
