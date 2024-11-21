@@ -1,55 +1,29 @@
-import { foo } from "./burger-opener.js";
-import { oka1111Mt29 } from "./params.js";
+import { openCloseBurger } from "./burger-opener.js";
+import { oka1111Mt29, oka11113Mt33, oka11116Mt37, oka11113Mt35, oka11116Mt53, oka11301Mt49 } from "./modifications/data.js";
+import { createCarParams } from "./modifications/render.js";
 
-foo();
+openCloseBurger();
 
-const mainContainer = document.querySelector('.parameters').querySelector('.container');
-const blockOfCarParams = document.createElement('div');
-const carPicture = document.createElement('img');
+const carsList = document.querySelectorAll('.parameters__list-title');
 
-const createCarParams = (obj) => {
-  blockOfCarParams.classList.add('parameters__car');
-  carPicture.classList.add('parameters__car-img');
-  carPicture.src = `./img/parameters/vaz1111graph1.png`;
-  blockOfCarParams.appendChild(carPicture);
-  for (let item in obj) {
-    createList(item, obj[item]);
+
+// const unfocusAllCars = () => {
+//   for (let car of carsList) {
+//     if (car.classList.contains)
+//   }
+// }
+
+function focusOnCar(car) {
+  console.log(car.target.classList);
+  car.target.classList.add('parameters__list-title--focused');
+}
+
+const chooseItem = () => {
+  for (let car of carsList) {
+    car.addEventListener('click', focusOnCar);
   }
-  mainContainer.appendChild(blockOfCarParams);
 }
 
-const sortObj = (obj, list) => {
-  for (const [key, value] of Object.entries(obj)) {
-    list.appendChild(createListItem(key, value));
-  }
-}
-
-const createList = (titleName, obj) => {
-  let list = document.createElement('ul');
-  list.classList.add('parameters__item');
-  if (titleName === 'Главное') {
-    list.classList.add('parameters__item--main');
-  }
-  let listTitle = document.createElement('h3');
-  listTitle.classList.add('parameters__item-title');
-  listTitle.innerHTML = titleName;
-
-  blockOfCarParams.appendChild(list);
-  list.appendChild(listTitle);
-  sortObj(obj, list);
-}
-
-const createListItem = (param1, param2) => {
-  let listItem = document.createElement('li');
-  listItem.classList.add('parameters__item-value')
-  let itemParam1 = document.createElement('span');
-  itemParam1.innerHTML = `${param1}: `;
-  let itemParam2 = document.createElement('span');
-  itemParam2.innerHTML = param2;
-  listItem.appendChild(itemParam1);
-  listItem.appendChild(itemParam2);
-  console.log(listItem);
-  return listItem;
-}
+chooseItem();
 
 createCarParams(oka1111Mt29);

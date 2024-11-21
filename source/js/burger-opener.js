@@ -15,8 +15,8 @@ let showOrHideMenu = () => {
   }
 }
 
-let foo = () => {
+let openCloseBurger = () => {
   navToggle.addEventListener('click', showOrHideMenu);
 }
 
-export {foo}
+export {openCloseBurger};
