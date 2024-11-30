@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--nojs">
       <div class="wrapper">
         <header class="header header--nojs header--opened">
           <div class="container">
@@ -71,13 +71,22 @@
               <h2 class="parameters__title">Характеристики модификаций</h2>
               <p class="parameters__desc">Выберите модификацию</p>
               <ul class="parameters__list">
-                <li class="parameters__list-title" data-set="oka1111Mt29">1111 МТ (29 л.с.)</li>
-                <li class="parameters__list-title" data-set="oka11113Mt33">11113 МТ (33 л.с.)</li>
-                <li class="parameters__list-title" data-set="oka11113Mt35">11113 МТ (35 л.с.)</li>
-                <li class="parameters__list-title" data-set="oka11116Mt37">11113 МТ (37 л.с.)</li>
-                <li class="parameters__list-title" data-set="oka11301Mt49">11301 МТ "Астро" (49 л.с.)</li>
-                <li class="parameters__list-title" data-set="oka11116Mt53">11116 МТ (53 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka1111Mt29">1111 МТ (29 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka11113Mt33">11113 МТ (33 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka11113Mt35">11113 МТ (35 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka11116Mt37">11113 МТ (37 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka11301Mt49">11301 МТ "Астро" (49 л.с.)</li>
+                <li class="parameters__list-title" data-id="oka11116Mt53">11116 МТ (53 л.с.)</li>
               </ul>
+            </div>
+          </section>
+          <section class="donate visually-hidden">
+            <div class="container">
+              <img src="./img/donate/qr.jpg" alt="qr-код для пожертвований">
+              <h2 class="donate__title">Сайт существует благодаря Вашим пожертвованиям!</h2>
+              <p class="donate__desc">Поддержать мою работу вы можете через банковский перевод на карту <span>4276 5500 9853 2560 (Сбербанк, Дмитрий К.)</span></p>
+              <p class="donate__list-donaters">Список поддержавших</p>
+              <button class="donate__close-btn"></button>
             </div>
           </section>
         </main>
@@ -104,13 +113,15 @@
               <img src="./img/footer/feedback.png" alt="telegram">
               <p>Написать разработчику</p>
             </a>
-            <a class="footer__donate" href="https://t.me/dimon4ik_kardamon4ik">
+            <a class="footer__donate">
               <img src="./img/footer/donate.png" alt="telegram">
               <p>Поддержать проект</p>
             </a>
             <a class="footer__donaters-list" href="#">Список поддержавших</a>
           </div>
         </footer>
+        <button class="theme-button">
+        </button>
       </div>
       <script src="./js/main.js" type="module"></script>
   </body>

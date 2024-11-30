@@ -1,0 +1,101 @@
+.theme-button {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 20px;
+  bottom: 110px;
+  border: none;
+  background-color: transparent;
+  background-image: url('./../../img/theme/dark-theme.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition-property: background-color transition;
+  transition-duration: 1s;
+  
+  &:hover {
+    transition-property: background-color transition;
+    transform: rotate(20deg);
+    transition-duration: 1s;
+  }
+}
+
+.page__body {
+  &--nojs .theme-button {
+    display: none;
+  }
+
+  &--black-theme,
+  &--black-theme .main,
+  &--black-theme .header,
+  &--black-theme .wrapper, {
+    background-color: #3D4140;
+    color: #3D4140;
+    transition-property: background-color;
+    transition-duration: 1s;
+  }
+  
+  &--black-theme .header__menu-item--focused {
+    color: #1f7917;
+  }
+
+  &--black-theme .footer,
+  &--black-theme .header, {
+    background-color: #C9D0CE;
+  }
+
+  &--black-theme .parameters {
+    color: #C9D0CE;
+  }
+
+  &--black-theme .parameters__car {
+    background-color: transparent;
+  }
+
+  &--black-theme .header__menu-item--history {
+    background-image: url("../img/header/logo/black-theme/light-btn-off.png");
+  }
+
+  &--black-theme .header__menu-item--history:hover {
+    background-image: url("../img/header/logo/black-theme/light-btn-on.png");
+  }
+
+  &--black-theme .header__menu-item--articles {
+    background-image: url("../img/header/logo/black-theme/light-long-btn-off.png");
+  }
+
+  &--black-theme .header__menu-item--articles:hover {
+    background-image: url("../img/header/logo/black-theme/light-long-btn-on.png");
+  }
+
+  &--black-theme .header__menu-item--sites {
+    background-image: url("../img/header/logo/black-theme/arrow-btn-off.png");
+  }
+
+  &--black-theme .header__menu-item--sites:hover {
+    background-image: url("../img/header/logo/black-theme/arrow-btn-on.png");
+  }
+
+  &--black-theme .header__menu-item--docs {
+    background-image: url("../img/header/logo/black-theme/battery-btn-off.png");
+  }
+
+  &--black-theme .header__menu-item--docs:hover {
+    background-image: url("../img/header/logo/black-theme/battery-btn-on.png");
+  }
+
+  &--black-theme .header__menu-item--donate {
+    background-image: url("../img/header/logo/black-theme/oil-btn-off.png");
+  }
+
+  &--black-theme .header__menu-item--donate:hover {
+    background-image: url("../img/header/logo/black-theme/oil-btn-on.png");
+  }
+}
+
+.main,
+.header,
+.footer,
+.wrapper, {
+  transition-property: background-color transition;
+  transition-duration: 1s;
+}

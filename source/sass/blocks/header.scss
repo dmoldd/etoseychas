@@ -137,43 +137,43 @@
   }
 
   &--history {
-    background-image: url("../img/light-btn-off.png");
+    background-image: url("../img/header/logo/light-btn-off.png");
   }
 
   &--history:hover {
-    background-image: url("../img/light-btn-on.png");
+    background-image: url("../img/header/logo/light-btn-on.png");
   }
 
   &--articles {
-    background-image: url("../img/light-long-btn-off.png");
+    background-image: url("../img/header/logo/light-long-btn-off.png");
   }
 
   &--articles:hover {
-    background-image: url("../img/light-long-btn-on.png");
+    background-image: url("../img/header/logo/light-long-btn-on.png");
   }
 
   &--sites {
-    background-image: url("../img/arrow-btn-off.png");
+    background-image: url("../img/header/logo/arrow-btn-off.png");
   }
 
   &--sites:hover {
-    background-image: url("../img/arrow-btn-on.png");
+    background-image: url("../img/header/logo/arrow-btn-on.png");
   }
 
   &--docs {
-    background-image: url("../img/battery-btn-off.png");
+    background-image: url("../img/header/logo/battery-btn-off.png");
   }
 
   &--docs:hover {
-    background-image: url("../img/battery-btn-on.png");
+    background-image: url("../img/header/logo/battery-btn-on.png");
   }
 
   &--donate {
-    background-image: url("../img/oil-btn-off.png");
+    background-image: url("../img/header/logo/oil-btn-off.png");
   }
 
   &--donate:hover {
-    background-image: url("../img/oil-btn-on.png");
+    background-image: url("../img/header/logo/oil-btn-on.png");
   }
 
   @media (max-width: 840px) {
@@ -213,7 +213,7 @@
     }
 
     li {
-      background-image: url('../img/gas-btn-off.png');
+      background-image: url('../img/header/logo/gas-btn-off.png');
       background-repeat: no-repeat;
       background-size: 30px;
       padding: 0 0 0 35px;
@@ -223,7 +223,7 @@
     }
 
     li:hover {
-      background-image: url('../img/gas-btn-on.png');
+      background-image: url('../img/header/logo/gas-btn-on.png');
       width: max-content;
       margin: 0 20px;
     }
