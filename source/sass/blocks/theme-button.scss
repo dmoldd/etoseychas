@@ -17,6 +17,14 @@
     transform: rotate(20deg);
     transition-duration: 1s;
   }
+
+  @media (max-width: 1250px) {
+    bottom: 180px;
+  }
+
+  @media (max-width: 720px) {
+    bottom: 330px;
+  }
 }
 
 .page__body {
@@ -33,7 +41,7 @@
     transition-property: background-color;
     transition-duration: 1s;
   }
-  
+
   &--black-theme .header__menu-item--focused {
     color: #1f7917;
   }
@@ -98,4 +106,8 @@
 .wrapper, {
   transition-property: background-color transition;
   transition-duration: 1s;
+}
+
+.page__body--black-theme .parameters__car-img {
+  background-image: url('../img/parameters/vaz1111graph1__black.png')
 }

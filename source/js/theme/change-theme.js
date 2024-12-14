@@ -6,16 +6,16 @@ const changeThemeHandler = () => {
   if (page__body.classList.contains('page__body--black-theme')) {
     page__body.classList.remove('page__body--black-theme');
     themeButton.style.backgroundImage = "url('./../../img/theme/dark-theme.png')";
-    } else {
-      page__body.classList.add('page__body--black-theme');
-      themeButton.style.backgroundImage = "url('./../../img/theme/light-theme.png')";
-      // carImg.src = "./img/parameters/vaz1111graph1__black.png";
+  } else {
+    page__body.classList.add('page__body--black-theme');
+    themeButton.style.backgroundImage = "url('./../../img/theme/light-theme.png')";
       }
     }
     
 const changeTheme = () => {
   page__body.classList.remove('page__body--nojs');
   themeButton.addEventListener('click', changeThemeHandler);
+  console.log(IS_BLACK_THEME);
 }
 
 export {changeTheme};

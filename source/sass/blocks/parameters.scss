@@ -19,10 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
-
-  @media (max-width: 500px) {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .parameters__list-title {
@@ -66,6 +63,9 @@
 
 .parameters__car-img {
   width: 50%;
+  background-image: url('../img/parameters/vaz1111graph1.png');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 
   @media (max-width: 1150px) {
     width: 60%;

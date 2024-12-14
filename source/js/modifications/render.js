@@ -1,11 +1,13 @@
 const mainContainer = document.querySelector('.parameters').querySelector('.container');
 const blockOfCarParams = document.createElement('div');
-const carPicture = document.createElement('img');
+const carPicture = document.createElement('div');
 
 const createCarParams = (obj) => {
   blockOfCarParams.classList.add('parameters__car');
   carPicture.classList.add('parameters__car-img');
-  carPicture.src = `./img/parameters/vaz1111graph1.png`;
+  // carPicture.src = `./img/parameters/vaz1111graph1.png`;
+  // carPicture.style.minWidth = '531px';
+  carPicture.style.minHeight = '269px';
   blockOfCarParams.appendChild(carPicture);
   for (let item in obj) {
     createList(item, obj[item]);

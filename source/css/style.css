@@ -233,7 +233,7 @@ img {
 }
 @media (max-width: 1599px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -599,6 +599,102 @@ a {
   padding: 0 0 50px 0;
 }
 
+.literature .container {
+  padding: 0 20px;
+}
+
+.literature__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 70px 0 70px 0;
+  line-height: 1.2;
+}
+
+.literature__items {
+  padding: 30px;
+  list-style-type: none;
+}
+
+.literature__item {
+  border: 2px solid #3D4140;
+  position: relative;
+  padding: 20px 20px 20px 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+@media (max-width: 1397px) {
+  .literature__item {
+    padding: 20px 20px 20px 350px;
+  }
+}
+@media (max-width: 1245px) {
+  .literature__item {
+    padding: 20px 20px 20px 360px;
+  }
+}
+@media (max-width: 1102px) {
+  .literature__item {
+    padding: 20px 20px 20px 420px;
+  }
+}
+
+.literature__item-img {
+  position: absolute;
+  height: calc(100% - 40px);
+  width: auto;
+  left: 20px;
+}
+
+.literature__item-title {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1397px) {
+  .literature__item-title {
+    width: 100%;
+  }
+}
+
+.literature__item-izdat {
+  margin-left: 40px;
+}
+@media (max-width: 1397px) {
+  .literature__item-izdat {
+    margin-left: 0;
+  }
+}
+
+.literature__item-type {
+  margin-left: 40px;
+}
+
+.literature__item-desc {
+  margin: 20px 0 0 0;
+}
+
+.literature__item-download {
+  padding: 10px;
+  border: 3px solid #3D4140;
+  margin: 10px 0 0 0;
+  display: flex;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3D4140;
+}
+.literature__item-download:hover {
+  background-color: #3D4140;
+  color: #C9D0CE;
+}
+@media (max-width: 1397px) {
+  .literature__item-download {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
 .parameters__title {
   text-align: center;
   text-transform: uppercase;
@@ -621,11 +717,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
-}
-@media (max-width: 500px) {
-  .parameters__list {
-    padding: 0;
-  }
+  padding: 0;
 }
 
 .parameters__list-title {
@@ -670,6 +762,9 @@ a {
 
 .parameters__car-img {
   width: 50%;
+  background-image: url("../img/parameters/vaz1111graph1.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 @media (max-width: 1150px) {
   .parameters__car-img {
@@ -1100,6 +1195,16 @@ a {
   transform: rotate(20deg);
   transition-duration: 1s;
 }
+@media (max-width: 1250px) {
+  .theme-button {
+    bottom: 180px;
+  }
+}
+@media (max-width: 720px) {
+  .theme-button {
+    bottom: 330px;
+  }
+}
 
 .page__body--nojs .theme-button {
   display: none;
@@ -1159,5 +1264,9 @@ a {
 .wrapper {
   transition-property: background-color transition;
   transition-duration: 1s;
+}
+
+.page__body--black-theme .parameters__car-img {
+  background-image: url("../img/parameters/vaz1111graph1__black.png");
 }
 /*# sourceMappingURL=style.css.map */

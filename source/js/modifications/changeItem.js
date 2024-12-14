@@ -1,5 +1,5 @@
 import { createCarParams } from "./render.js";
-import { oka1111Mt29, oka11113Mt33, oka11116Mt37, oka11113Mt35, oka11116Mt53, oka11301Mt49 } from "./data.js";
+import { oka1111Mt29, oka11113Mt33, oka11115Mt37, oka11116Mt53, oka11301Mt49 } from "./data.js";
 
 const carsList = document.querySelectorAll('.parameters__list-title');
 
@@ -23,10 +23,8 @@ function focusOnCar(car) {
     setTimeout(() => createCarParams(oka11116Mt53), 200);
 } else if (car.target.dataset.id === 'oka11113Mt33') {
     setTimeout(() => createCarParams(oka11113Mt33), 200);
-} else if (car.target.dataset.id === 'oka11116Mt37') {
-    setTimeout(() => createCarParams(oka11116Mt37), 200);
-} else if (car.target.dataset.id === 'oka11113Mt35') {
-    setTimeout(() => createCarParams(oka11113Mt35), 200);
+} else if (car.target.dataset.id === 'oka11115Mt37') {
+    setTimeout(() => createCarParams(oka11115Mt37), 200);
 } else if (car.target.dataset.id === 'oka11301Mt49') {
     setTimeout(() => createCarParams(oka11301Mt49), 200);
   }
