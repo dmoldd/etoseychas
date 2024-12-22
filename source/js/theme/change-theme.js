@@ -15,7 +15,6 @@ const changeThemeHandler = () => {
 const changeTheme = () => {
   page__body.classList.remove('page__body--nojs');
   themeButton.addEventListener('click', changeThemeHandler);
-  console.log(IS_BLACK_THEME);
 }
 
 export {changeTheme};

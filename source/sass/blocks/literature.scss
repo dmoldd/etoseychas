@@ -12,14 +12,20 @@
 .literature__items {
   padding: 30px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-wrap: wrap;
 }
 .literature__item {
-  border: 2px solid #3D4140;
+  // border: 2px solid #3D4140;
+  border-radius: 15px;
   position: relative;
   padding: 20px 20px 20px 320px;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  background-color: #fff;
 
   @media (max-width: 1397px) {
     padding: 20px 20px 20px 350px;
@@ -33,6 +39,11 @@
     padding: 20px 20px 20px 420px;
   }
 
+  @media (max-width: 1060px) {
+    width: calc(50% - 30px);
+    padding: 20px;
+  }
+
   // @media (max-width: 1052px) {
   //   padding: 300px 0 0 0;
   // }
@@ -43,6 +54,9 @@
   width: auto;
   left: 20px;
 
+  @media (max-width: 1060px) {
+    display: none;
+  }
   // @media (max-width: 1052px) {
   //   height: 300px;
   //   width: auto;
@@ -65,9 +79,18 @@
 }
 .literature__item-type {
   margin-left: 40px;
+
+  @media (max-width: 1060px) {
+    margin-left: 0;
+  }
 }
 .literature__item-desc {
   margin: 20px 0 0 0;
+
+    
+  // @media (max-width: 1060px) {
+  //   display: none;
+  // }
 }
 .literature__item-download {
   padding: 10px;
@@ -90,4 +113,30 @@
     top: 20px;
     right: 20px;
   }
+
+  @media (max-width: 1060px) {
+    position: static;
+    margin: 20px auto 0; 
+    border-radius: 10px;
+  }
+}
+
+.literature__item-btn-hide {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0;
+  color: #3d9169;
+  
+  // @media (max-width: 1060px) {
+  //   display: block;
+  // }
+}
+
+.literature__item-desc--short {
+  // display: none;
+  
+  // @media (max-width: 1060px) {
+  //   display: block;
+  // }
 }
