@@ -8,6 +8,12 @@
   text-transform: uppercase;
   margin: 70px 0 70px 0;
   line-height: 1.2;
+  
+  @media (max-width: 1060px) {
+    margin: 40px 0 20px 0;
+    text-align: right;
+    padding: 0 50px 0 0;
+  }
 }
 .literature__items {
   padding: 30px;
@@ -16,6 +22,11 @@
   flex-direction: column;
   row-gap: 20px;
   flex-wrap: wrap;
+
+  @media (max-width: 1060px) {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 .literature__item {
   // border: 2px solid #3D4140;
@@ -40,8 +51,8 @@
   }
 
   @media (max-width: 1060px) {
-    width: calc(50% - 30px);
-    padding: 20px;
+    width: calc(33% - 11px);
+    padding: 20px 20px 20px 20px;
   }
 
   // @media (max-width: 1052px) {
@@ -55,7 +66,9 @@
   left: 20px;
 
   @media (max-width: 1060px) {
-    display: none;
+    position: static;
+    width: 100%;
+    height: auto;
   }
   // @media (max-width: 1052px) {
   //   height: 300px;
@@ -68,6 +81,12 @@
   // padding: 20px 0 20px 0;
   @media (max-width: 1397px) {
     width: 100%;
+  }
+
+  @media (max-width: 1060px) {
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    text-align: center;
   }
 }
 .literature__item-izdat {
@@ -87,10 +106,9 @@
 .literature__item-desc {
   margin: 20px 0 0 0;
 
-    
-  // @media (max-width: 1060px) {
-  //   display: none;
-  // }
+  @media (max-width: 1060px) {
+    font-size: 13px;
+  }
 }
 .literature__item-download {
   padding: 10px;

@@ -446,6 +446,7 @@ a {
   top: 80px;
   background-image: none;
   padding: 20px 20px 20px 0;
+  z-index: 999;
 }
 .header__menu-item--inner-vert a {
   display: block;
@@ -609,6 +610,13 @@ a {
   margin: 70px 0 70px 0;
   line-height: 1.2;
 }
+@media (max-width: 1060px) {
+  .literature__title {
+    margin: 40px 0 20px 0;
+    text-align: right;
+    padding: 0 50px 0 0;
+  }
+}
 
 .literature__items {
   padding: 30px;
@@ -617,6 +625,12 @@ a {
   flex-direction: column;
   row-gap: 20px;
   flex-wrap: wrap;
+}
+@media (max-width: 1060px) {
+  .literature__items {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .literature__item {
@@ -645,8 +659,8 @@ a {
 }
 @media (max-width: 1060px) {
   .literature__item {
-    width: calc(50% - 30px);
-    padding: 20px;
+    width: calc(33% - 11px);
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -658,7 +672,9 @@ a {
 }
 @media (max-width: 1060px) {
   .literature__item-img {
-    display: none;
+    position: static;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -669,6 +685,13 @@ a {
 @media (max-width: 1397px) {
   .literature__item-title {
     width: 100%;
+  }
+}
+@media (max-width: 1060px) {
+  .literature__item-title {
+    margin: 10px 0 0 0;
+    font-size: 25px;
+    text-align: center;
   }
 }
 
@@ -692,6 +715,11 @@ a {
 
 .literature__item-desc {
   margin: 20px 0 0 0;
+}
+@media (max-width: 1060px) {
+  .literature__item-desc {
+    font-size: 13px;
+  }
 }
 
 .literature__item-download {
